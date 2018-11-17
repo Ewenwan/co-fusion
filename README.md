@@ -1,4 +1,13 @@
-# Co-Fusion
+# Co-Fusion   CRF 图像分割 --> 对象 --> 跟踪
+    
+    我们使用多模型拟合方法，其中每个对象可以独立于背景移动，
+    并且仍然被有效地跟踪，并且其形状随着时间的推移，使用来自与该对象标签相关联的像素的信息融合。
+    处理动态场景通常将移动区域视为异常值，因此不会对其形状进行建模或跟踪其随时间的运动。
+    相比之下，我们使机器人能够为每个分段对象维护3D模型，并通过融合随时间改进它们。
+    因此，我们的系统可以使机器人能够在对象层面上保持场景描述，
+    这有可能允许与其工作环境进行交互;即使在动态场景的情况下。
+    
+    
 
 This repository contains Co-Fusion, a dense SLAM system that takes a live stream of RGB-D images as input and segments the scene into different objects.
 
